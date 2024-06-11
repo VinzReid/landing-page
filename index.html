@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="./style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon.png"
+    />
+    <title>Vins Cafe</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./images/logo.png"
+            class="img-fluid w-25"
+            style="display: inline-block"
+          />
+          <h6 style="display: inline-block; margin-left: 5px">Vins Cafe</h6>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarNav">
+          <ul class="navbar-nav ms-auto pe-5">
+            <li class="nav-item px-2 mx-2">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item px-2 mx-2">
+              <a class="nav-link" href="#about-us">About</a>
+            </li>
+            <li class="nav-item px-2 mx-2">
+              <a class="nav-link" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item px-2 mx-2">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="container">
+        <h1>Welcome to Vins Cafe</h1>
+        <h4>Enjoy the finest meals and drinks in town</h4>
+        <a href="#menu" class="btn btn-primary mb-3">View Menu</a>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 d-flex justify-content-center">
+            <div
+              id="carouselExampleSlidesOnly"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                  <img
+                    src="./images/1.jpg"
+                    class="img-fluid d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                  <img
+                    src="./images/2.jpg"
+                    class="img-fluid d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                  <img
+                    src="./images/3.jpg"
+                    class="img-fluid d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-us" class="py-5 bg-light">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <div class="text-center mb-4">
+              <h2>About Us</h2>
+              <p class="lead">Discover Our Story</p>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <img
+                  src="./images/about.jpg"
+                  class="img-fluid rounded mb-4"
+                  alt="Cafe Image"
+                />
+              </div>
+              <div class="col-md-6">
+                <h3>Welcome to Vins Cafe</h3>
+                <p>
+                  At Vins Cafe, we believe in providing our customers with an
+                  exceptional coffee experience. Since our establishment in
+                  2010, we've been dedicated to sourcing the finest coffee beans
+                  and creating a cozy environment where our guests can relax and
+                  enjoy.
+                </p>
+                <p>
+                  Our mission is to deliver not just great coffee, but also a
+                  warm and welcoming atmosphere where everyone feels at home.
+                  Whether you're here for a quick coffee break or a long chat
+                  with friends, Vins Cafe is the perfect spot.
+                </p>
+              </div>
+            </div>
+            <div class="row mt-5">
+              <div class="col-md-4 text-center">
+                <div class="icon mb-2">
+                  <i class="bi bi-cup-fill" style="font-size: 2rem"></i>
+                </div>
+                <h5>Premium Coffee</h5>
+                <p>We source the best beans and roast them to perfection.</p>
+              </div>
+              <div class="col-md-4 text-center">
+                <div class="icon mb-2">
+                  <i class="bi bi-heart-fill" style="font-size: 2rem"></i>
+                </div>
+                <h5>Cozy Atmosphere</h5>
+                <p>Our cafe offers a comfortable and inviting environment.</p>
+              </div>
+              <div class="col-md-4 text-center">
+                <div class="icon mb-2">
+                  <i class="bi bi-people-fill" style="font-size: 2rem"></i>
+                </div>
+                <h5>Friendly Staff</h5>
+                <p>Our staff is always here to make your visit enjoyable.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <div class="container">
+        <h2>Our Products</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="./images/menu coffee.jpg"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Coffee</h5>
+                <p class="card-text card-text-wrap">
+                  rich, aromatic beverage made from roasted beans, enjoyed
+                  worldwide for its stimulating effects.
+                </p>
+                <a href="#menu" class="btn btn-primary">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="./images/menu tea.jpg"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tea</h5>
+                <p class="card-text card-text-wrap">
+                  a soothing beverage made from steeped leaves, offering diverse
+                  flavors and health benefits worldwide.
+                </p>
+                <a href="#menu" class="btn btn-primary">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="./images/menu pastries.jpg"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pastries</h5>
+                <p class="card-text card-text-wrap">
+                  delicious baked goods made from dough, often filled or topped
+                  with various sweet or savory ingredients.
+                </p>
+                <a href="#menu" class="btn btn-primary">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="text-center mb-4">
+              <h2>Contact Us</h2>
+              <p class="lead">We'd love to hear from you!</p>
+            </div>
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="4"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-4 text-center">
+            <h5>Address</h5>
+            <p>123 Coffee Street, Caffeine City, 56789</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <h5>Phone</h5>
+            <p>(123) 456-7890</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <h5>Email</h5>
+            <p>info@vinscafe.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="footer">
+      <div class="container">
+        <p>&copy; 2024 Vins Cafe. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

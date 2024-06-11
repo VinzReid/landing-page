@@ -1,0 +1,127 @@
+/* Custom styles */
+* {
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+.hero {
+  background-color: #f5f5f5;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.menu {
+  padding: 50px 0;
+}
+
+.menu h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.card {
+  margin-bottom: 30px;
+}
+
+.footer {
+  background-color: #461510;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+.card-text-wrap {
+  word-wrap: break-word;
+  white-space: normal;
+}
+.btn {
+  background-color: #461510;
+  box-shadow: 0px 0px 5px black, 0px 0px 15px #858585;
+  color: whitesmoke;
+  padding: 0.6rem 1.5rem;
+  text-decoration: none;
+  border: 0;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background-color: #461510;
+}
+.nav-item:hover {
+  transform: scale(1.1);
+}
+
+.nav-item {
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+.nav-link {
+  color: #461510 !important;
+}
+
+.card {
+  background: rgba(46, 15, 10, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+h1,
+h2,
+h3,
+h4,
+h6,
+h5,
+p,
+.form-label {
+  color: #461510;
+}
+@media only screen and (min-width: 1125px) and (min-height: 867px) {
+  .carousel-item {
+    transition: transform 2s ease;
+  }
+
+  .carousel-inner {
+    height: 630px; /* Adjust the height as needed */
+    width: 1120px;
+    overflow: hidden; /* Hide any overflow to prevent stretching */
+  }
+
+  .carousel-item img {
+    height: 100%;
+    width: auto;
+  }
+}
+
+.card-text {
+  word-wrap: break-word;
+  white-space: normal;
+  color: #f8f3f3;
+}
+.card-title,
+.footer > div > p {
+  color: #f8f3f3;
+}
