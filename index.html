@@ -28,7 +28,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand d-none d-sm-block" href="#">
           <img
             src="./images/logo.png"
             class="img-fluid w-25"
@@ -324,5 +324,18 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script>
+      // Close the navbar when a link is clicked
+      document
+        .querySelectorAll(".navbar-nav > .nav-item > .nav-link")
+        .forEach(function (element) {
+          element.addEventListener("click", function () {
+            var navbarCollapse = document.querySelector(".navbar-collapse");
+            if (navbarCollapse.classList.contains("show")) {
+              navbarCollapse.classList.remove("show");
+            }
+          });
+        });
+    </script>
   </body>
 </html>
